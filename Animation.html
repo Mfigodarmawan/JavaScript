@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Animation</title>
+    <title>Javascript Animation</title>
     <script type="text/javascript">
         var imgObj = null;
 
         function init() {
-            imgObj =document.getElementById('myImage');
-            imgObj.style.position= 'relative';
-            imgObj.style.left = '0px';
+            imgObj = document.getElementById('myImage');
+            imgObj.style.position= 'relative'
+            imgObj.style.left= '0px';
         }
         function moveRight() {
                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
@@ -22,9 +22,9 @@
 </head>
 <body>
     <form>
-        <img id = "myImage" src="html.gif" />
-        <p>Click button bellow to move the image to right </p>
-        <input type = "button" value = "Click Me" onclick = "moveRight();" />
+        <img id="myImage" src="html.gif" />
+        <p>Click button below to move the image to right</p>
+        <input type="button" value="Click me" onclick="moveRight();" />
     </form>
 </body>
 </html>
