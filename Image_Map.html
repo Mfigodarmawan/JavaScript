@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image map</title>
+    <script type="text/javascript">
+        function showTutorial(name) {
+            document.myform.stage.value = name
+        }
+    </script>
+</head>
+<body>
+    <form name = "myform">
+        <input type="text" name="stage" size="20" />
+    </form>
+
+    <img src="usemap.gif" alt="HTML map" border="0" usemap="#tutorials">
+
+    <map name="tutorials">
+        <area shape="poly" 
+        coords="74,0,113,29,98,72,52,72,38,27" 
+        href="/perl/index.htm" alt="perl tutorial"
+        target="_self"
+        onmouseover="showtutorial('perl')"
+        onmouseout="showtutorial('')">
+
+        <area shape="rect" 
+        coords="22,83,126,125" 
+        href="/html/index.htm" alt="HTML tutorial"
+        target="_self"
+        onmouseover="showtutorial('html')"
+        onmouseout="showtutorial('')">
+
+        <area shape="circle" 
+        coords="73,168,32" 
+        href="/php/index.htm" alt="php tutorial"
+        target="_self"
+        onmouseover="showtutorial('php')"
+        onmouseout="showtutorial('')">
+    </map>
+</body>
+</html>
